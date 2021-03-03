@@ -18,3 +18,6 @@ sourcecode：题目源码
 | 与熊论道       |                  |
 | secret message | ERROR404（小蓝） |
 
+## 注：
+
+secret message暂时不公开源码和wp
