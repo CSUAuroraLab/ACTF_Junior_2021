@@ -108,7 +108,7 @@ ins.r = ida_hexrays.mop_t() #空操作数
 
 写好之后，把脚本丢到ida的插件文件夹里头，重启ida，反编译一次，即可看到很明显的效果
 
-（图片来源：http://dreamstalker.cn/index.php/2021/03/02/macrocode_result/）
+图片来源：http://dreamstalker.cn/index.php/2021/03/02/macrocode_result/
 
 ![image-20210303003220089](wppics/image-20210303003220089.png)
 

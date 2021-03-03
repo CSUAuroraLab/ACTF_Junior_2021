@@ -1,0 +1,8 @@
+version: '2'
+services:
+ actf2021linkgame:
+   image: mattrayner/lamp:latest
+   volumes:
+    - ./www/:/var/www/html/
+   ports:
+    - "29016:80"
