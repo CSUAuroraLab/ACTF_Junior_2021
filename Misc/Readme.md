@@ -15,7 +15,7 @@ sourcecode：题目源码
 | Real_way       | 长安             |
 | 纳什均衡       | 长安             |
 | 禁止摸鱼       | Crucio           |
-| 与熊论道       |                  |
+| 与熊论道       | Crucio           |
 | secret message | ERROR404（小蓝） |
 
 ## 注：
