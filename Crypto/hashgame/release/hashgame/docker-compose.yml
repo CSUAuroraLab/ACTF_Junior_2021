@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+
+  crypto:
+    build: .
+    ports:
+      - "10002:9999"
+    restart: always

@@ -1,0 +1,3 @@
+<?php
+$flag = 'ACTF{Why_not_look_it_directly!!}';
+?>

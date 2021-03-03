@@ -1,0 +1,6 @@
+FROM openjdk:8
+
+COPY ./easyXSS.jar /tmp/easyXSS.jar
+EXPOSE 8080
+
+CMD ["java", "-jar", "/tmp/easyXSS.jar"]

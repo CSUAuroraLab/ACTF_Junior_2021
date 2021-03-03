@@ -20,6 +20,6 @@ sourcecode：题目源码
 | How2idaXref                 | 100  | Gstalker                                                     |
 | How2Reverse                 | 50   | Gstalker                                                     |
 | Bytecode                    | 300  | p0lar1s                                                      |
-| pyde                        | 200  | Palmer                                                       |
+| pyde                        | 200  | [Palmer](https://github.com/Forgo7ten)                       |
 | Threads                     | 200  | Gstalker                                                     |
 

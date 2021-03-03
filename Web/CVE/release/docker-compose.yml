@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+
+  web:
+    build: .
+    ports:
+      - "49163:7001"
+      - "49164:7002"
+      - "49165:5556"
+    restart: always

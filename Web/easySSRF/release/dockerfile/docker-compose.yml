@@ -1,0 +1,35 @@
+version: "3"
+
+services:
+
+    ######## outter environment   ##############################
+    ssrf_outter:
+        build:
+            context: ./outter
+        image: ssrf_outter
+        container_name: ssrf_outter
+        ports:
+        - "20213:80"
+        networks:
+            ssrf-net:
+                ipv4_address: 192.168.54.2
+
+    ########  inner environment   ##############################
+    ssrf_inner:
+        build:
+            context: ./inner
+        image: ssrf_inner
+        container_name: ssrf_inner
+        networks:
+            ssrf-net:
+                ipv4_address: 192.168.54.3
+
+
+networks:
+
+    ######## ssrf internet       ##############################
+    ssrf-net:
+        ipam:
+            config:
+                - subnet: 192.168.54.0/24
+        name: las-ssrf-net

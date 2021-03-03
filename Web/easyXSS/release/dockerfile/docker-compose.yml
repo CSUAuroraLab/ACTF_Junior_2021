@@ -1,0 +1,36 @@
+version: "3"
+
+services:
+
+    ######## java environment   ##############################
+    xss_openjdk:
+        build:
+            context: ./openjdk
+            dockerfile: Dockerfile-openjdk
+        image: xss_openjdk
+        container_name: xss-openjdk
+        ports:
+        - "20212:8080"
+        networks:
+            xss-net:
+                ipv4_address: 192.168.242.24
+
+    ######## mysql environment  ##############################
+    xss_mysql:
+        build:
+            context: ./mysql
+            dockerfile: Dockerfile-mysql
+        image: xss_mysql
+        container_name: xss-mysql
+        networks:
+            xss-net:
+                ipv4_address: 192.168.242.25
+
+networks:
+
+    ######## xss internet       ##############################
+    xss-net:
+        ipam:
+            config:
+                - subnet: 192.168.242.0/24
+        name: las-xss-net

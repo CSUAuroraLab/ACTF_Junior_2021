@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+
+  crypto:
+    image: cry1
+    build: .
+    ports:
+      - "10001:9999"
+    restart: always

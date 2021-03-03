@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+    easyUpload:
+        build: ./
+        image: aurora_2021_new_easyupload
+        ports:
+        - "20211:80"
+        container_name: aurora_2021_new_easyupload
+        deploy:
+            resources:
+                limits:
+                    cpus: '0.50'
+                    memory: 500M
