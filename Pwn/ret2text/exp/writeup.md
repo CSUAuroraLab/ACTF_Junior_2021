@@ -1,0 +1,3 @@
+# ret2text
+function list中有backdoor
+直接溢出返回地址为backdoor即可
